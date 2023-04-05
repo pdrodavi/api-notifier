@@ -1,0 +1,50 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API Gateway Node JS",
+    "description": "Developer: Pedro Davi - https://pedrodavi.com.br"
+  },
+  "host": "gwapi.cwrd.com.br",
+  "basePath": "",
+  "tags": [],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/v1/notify/pix": {
+      "post": {
+        "tags": [
+          "Notify Payment"
+        ],
+        "description": "Notify Pix.",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Request",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "sequence": {
+                  "type": "string",
+                  "example": "string"
+                }
+              },
+              "required": [
+                "sequence"
+              ]
+            }
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
